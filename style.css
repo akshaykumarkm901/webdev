@@ -1,0 +1,20 @@
+ #lll{
+  height: 600px;
+  width: 80%;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: flex-start;
+  align-content: space-between;
+  
+ }
+ #lll div{
+  height: 100px;
+  width: 300px;
+  font-size: 1.5em;
+  text-align: center;
+ }
