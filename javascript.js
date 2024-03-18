@@ -3,4 +3,3 @@
  while( (guess!=favoriteMovie)&& (guess != "quite" )){
    guess = prompt ("wrong guess . please try again")
  }
- 
