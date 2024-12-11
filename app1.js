@@ -49,7 +49,7 @@ url='https://catfact.ninja/fact';
 //     }
 //     console.log(url)
 
-// }
+// }nothing
 async function getfact() {
       try {
         res= await axios.get(url);
