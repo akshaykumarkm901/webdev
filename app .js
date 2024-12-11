@@ -1,18 +1,17 @@
-  const max=prompt("enter the max number");
- const random= Math.floor(Math.random()*max) +1;
- let guess=prompt("guess the number");
- while(true){
-  if(guess=="quite")  {
-  console.log ("user quite the game");
-  break;
+let h1=document.querySelector('h1')
+console.log(h1)
+function changecolor(color,dely){
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            h1.style.color=color;
+            resolve('complerte');
+        },dely)
+    })
 }
-  if (guess==random) {
-  console.log("congrats you guess the ",random);
-  break;
- }
- else if (guess < random) {
-  guess=prompt("your guess small number");
- } else {
-  guess=prompt("you guess the  large number");
- }
- }
+async function demo() {
+    await changecolor('red',1000);
+    await changecolor('green',1000);
+    await changecolor('blue',1000);
+    
+};
+demo()
